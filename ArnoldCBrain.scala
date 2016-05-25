@@ -22,19 +22,6 @@ object ArnoldCBrain{
     }
   }
 
-  /*def evalOperation(a: Int, op: Operation) = {
-    op match {
-      case Plus(o) => a + evalOperand(o)
-      case Minus(o) => a - evalOperand(o)
-      case Mult(o) => a * evalOperand(o)
-      case Div(o) => a / evalOperand(o)
-      case EqualTo(o) => if(a == evalOperand(o)) 1 else 0
-      case GreaterThen(o) => if(a > evalOperand(o)) 1 else 0
-      case Or(o) => if(a || evalOperand(o)) 1 else 0
-      case And(o) => if(a && evalOperand(o)) 1 else 0
-    }
-  } */
-
   def evalAssign(v: Variable, firstOperand: Operand, opList: List[Operation]) = {
     var acc = evalOperand(firstOperand)
     opList.foreach { op =>
