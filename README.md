@@ -1,2 +1,4 @@
 # ArnoldC-DSL
-A DSL in Scala for the imperative esoteric language ArnoldC
+A Scala DSL parser for the imperative esoteric language ArnoldC
+
+Feel free to give me any suggestion about this project.
